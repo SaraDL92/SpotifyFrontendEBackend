@@ -8,7 +8,7 @@ function Music() {
     useEffect(() => {
       const fetchData = async () => {
         try {
-          const response = await axios.get('localhost:44347/api/Song'); // Sostituisci 'URL_DEL_API' con il tuo URL API
+          const response = await axios.get('localhost:44347/api/Song'); 
           setMusicData(response.data);
         } catch (error) {
           console.error('Errore nella richiesta GET:', error);
@@ -16,7 +16,7 @@ function Music() {
       };
   
       fetchData();
-    }, []); // L'array vuoto indica che il useEffect verrà eseguito solo al montaggio del componente
+    }, []); 
   
     return (
       <div>
